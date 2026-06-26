@@ -1,0 +1,362 @@
+/*common*/
+section{
+  overflow: hidden;
+  margin: 0 0 30px 0;
+}
+section .inner:not(.slider){
+  padding: 0 16px;
+}
+section .inner.slider{
+  padding: 0 0 0 16px;
+}
+.sub-title{
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  margin: 4px 0 16px;
+}
+.slider .frame{
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.slider .frame::-webkit-scrollbar{
+  display: none;
+}
+.book-writer{
+  font-size: 14px;
+  letter-spacing: -0.25px;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*header*/
+header{
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color);
+}
+header .inner{
+  padding: 18px 16px;
+}
+header .inner h1 a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header .inner h1 a img{
+  display: block;
+  width: 123px;
+  height: auto;
+}
+/*contaienr*/
+#contaienr{
+  margin-bottom: 160px;
+}
+/*section1 week growth*/
+.sec1{
+  margin: 20px 0 30px;
+}
+.sec1 .growth-box{
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.sec1 .growth-box .week-growth{
+  display: flex;
+  border: 1px solid var(--border-color);
+}
+.sec1 .growth-box .week-growth .title{
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 5%;
+}
+.sec1 .growth-box .week-growth .num{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.25;
+}
+.sec1 .growth-box .week-growth .txt{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.25;
+  color: var(--gray00-color);
+}
+.sec1 .growth-box .week-growth .streak{
+  padding: 10px 16px;
+  flex: 0 1 76px;
+}
+.sec1 .growth-box .week-growth .streak .title{
+  font-weight: 500;
+}
+.sec1 .growth-box .week-growth .streak .num-box{
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  margin-top: 4px;
+}
+.sec1 .growth-box .week-growth .streak .num-box .fire-icon{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../../img/icon/flame.svg") no-repeat center / 100%;
+}
+.sec1 .growth-box .week-growth .state{
+  flex: 0 1 calc(100% - 76px);
+  padding: 10px 16px;
+  border-left: 1px solid var(--border-color);
+}
+.sec1 .growth-box .week-growth .state .title{
+  font-weight: 400;
+}
+.sec1 .growth-box .week-growth .state ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.sec1 .growth-box .week-growth .state ul li:nth-child(1) .num{
+  color: var(--primary-color);
+}
+.sec1 .growth-box .week-growth .state ul li:nth-child(2) .num{
+  color: #00B978;
+}
+.sec1 .growth-box .week-growth .state ul li:nth-child(3) .num{
+  color: #F68B3F;
+}
+.sec1 .growth-box .daily-growth{
+  background-color: var(--primary-color);
+  padding: 0 8px;
+  height: 26px;
+}
+.sec1 .growth-box .daily-growth a{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1 .growth-box .daily-growth a span.txt{
+  font-size: 10px;
+  letter-spacing: 5%;
+  color: #fff;
+}
+.sec1 .growth-box .daily-growth a img.arrow-btn{
+  display: block;
+  flex: 0 0 8px;
+  height: 8px;
+}
+/*section2 category slider*/
+.sec2{
+  margin-top: 9px;
+}
+.sec2 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 4px;
+  margin-top: 20px;
+}
+.sec2 .frame ul li{
+  flex: 0 1 auto;
+}
+.sec2 .frame ul li a{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+.sec2 .frame ul li:nth-child(1) a span.icon{
+  background: url("../../img/icon/hourglass.svg") no-repeat center / 100%;
+}
+.sec2 .frame ul li:nth-child(2) a span.icon{
+  background: url("../../img/icon/price.svg") no-repeat center / 100%;
+  
+}
+.sec2 .frame ul li:nth-child(3) a span.icon{
+  background: url("../../img/icon/card.svg") no-repeat center / 100%;
+  
+}
+.sec2 .frame ul li:nth-child(4) a span.icon{
+  background: url("../../img/icon/personality.svg") no-repeat center / 100%;
+
+}
+.sec2 .frame ul li a span.icon{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #222;
+}
+.sec2 .frame ul li a span.txt{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+/*section3 curation*/
+.sec3 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 16px;
+}
+.sec3 .frame ul li{
+  flex: 0 1 140px;
+}
+.sec3 .frame ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec3 .frame ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+/*section4 microlearning*/
+.sec4 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 12px;
+}
+.sec4 .frame ul li{
+  flex: 0 0 68px;
+  border-radius: 20px;
+  padding: 4px;
+  border: 2px solid var(--primary-color);
+}
+.sec4 .frame ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec4 .frame ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+/*section5 productivity*/
+.sec5 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 16px;
+}
+.sec5 .frame ul li{
+  flex: 0 1 140px;
+}
+.sec5 .frame ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec5 .frame ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+/*section6 chllenges*/
+.sec6 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.sec6 .frame ul li{
+  flex: 0 0 302px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sec6 .frame ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec6 .frame ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*section7 collections*/
+.sec7 .frame ul{
+  width: 200%;
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.sec7 .frame ul li{
+  flex: 0 0 228px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.sec7 .frame ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec7 .frame ul li a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*section8 manage*/
+.sec8 .manage-box{
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 20px 16px;
+  border-radius: 14px;
+}
+.sec8 .manage-box ul{
+  margin: 30px 0 24px;
+}
+.sec8 .manage-box ul li{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.sec8 .manage-box ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.sec8 .manage-box ul li span.icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.sec8 .manage-box ul li:nth-child(1) span.icon{
+  background: url("../../img/icon/timer.svg") no-repeat center / 100%;
+}
+.sec8 .manage-box ul li:nth-child(2) span.icon{
+  background: url("../../img/icon/price.svg") no-repeat center / 100%;
+}
+.sec8 .manage-box ul li:nth-child(3) span.icon{
+  background: url("../../img/icon/brain.svg") no-repeat center / 100%;
+}
+.sec8 .manage-box ul li span.txt{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+.sec8 .manage-box button{
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  background-color: var(--gray03-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  border: 10px;
+  cursor: pointer;
+}

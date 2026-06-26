@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>listen</title>
+  <script src="js/js_sub2.js" defer></script>
+  <link rel="stylesheet" href="css/page/sub2.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="btns">
+      <a href="index.html" class="close-btn"><img src="img/icon/close.svg" alt="close"></a>
+      <span class="setting-btn"><img src="img/icon/settings.svg" alt="setting"></span>
+    </div>
+    <div class="book-info">
+      <img src="img/bookcover/bookcover1.png" alt="raise your game">
+      <h3>KEY POINT 2 OF 10</h3>
+      <p class="book-name">The power of passion</p>
+    </div>
+    <div class="progress-bar">
+      <span class="current-time">00:00</span>
+      <input type="range" min="1" max="100" value="0">
+      <span class="total-time">01:01</span>
+    </div>
+    <div class="spped">1x speed</div>
+    <div class="state-btn">
+      <span class="btn back"><img src="img/icon/skip.svg" alt="back"></span>
+      <span class="btn rewind"><img src="img/icon/rewind.svg" alt="5seconds rewind"></span>
+      <span class="btn pause-play"><img src="img/icon/play.svg" alt="pause"></span>
+      <span class="btn fast-forward"><img src="img/icon/fast-forward.svg" alt="10seconds fast forward"></span>
+      <span class="btn prev"><img src="img/icon/skip.svg" alt="prev"></span>
+    </div>
+    <div class="toggle-btn">
+      <div class="inner">
+        <a href="#" class="read-btn"><img src="img/icon/align-left.svg" alt="read goto"></a>
+        <a href="#" class="listen-btn"><img src="img/icon/headphones.svg" alt="listen goto"></a>
+      </div>
+    </div>
+    <div class="popup-back"></div>
+    <div class="setting-popup">
+      <div class="popup-inner">
+        <div class="speed">
+          <p class="title">Playback speed</p>
+          <div class="speed-options">
+            <input type="radio" name="speed" id="speed1" value="0.8">
+            <label for="speed1">0.8x</label>
+            <input type="radio" name="speed" id="speed2" value="1" checked>
+            <label for="speed2">Normal</label>
+            <input type="radio" name="speed" id="speed3" value="1.2">
+            <label for="speed3">1.2x</label>
+            <input type="radio" name="speed" id="speed4" value="1.5">
+            <label for="speed4">1.5x</label>
+          </div>
+        </div>
+        <div class="narrator">
+          <p class="title">Choose a narrator</p>
+          <p class="sub-title">You can change it anytime</p>
+          <div class="narrator-option">
+            <input type="radio" name="narrator" id="narrator1" value="paul" checked>
+            <label for="narrator1">
+              <span class="name">Paul</span>
+              <span class="dot"></span>
+              <span class="gender">Male</span>
+              <span class="dot last-dot"></span>
+              <span class="featured">Featured</span>
+            </label>
+            <input type="radio" name="narrator" id="narrator2" value="Sophie">
+            <label for="narrator2">
+              <span class="name">Sophie</span>
+              <span class="dot"></span>
+              <span class="gender">Female</span>
+              <span class="dot last-dot"></span>
+              <span class="featured">Featured</span>
+            </label>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

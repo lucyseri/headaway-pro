@@ -1,0 +1,294 @@
+#wrap{
+  width: 100%;
+  min-height: 100vh;
+}
+/*close & setting btn*/
+.btns{
+  width: 100%;
+  height: 24px;
+  position: relative;
+}
+.btns .close-btn{
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+}
+.btns .close-btn img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.btns .setting-btn{
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+}
+.btns .setting-btn img{
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+/*book info*/
+.book-info{
+  margin-top: 32px;
+}
+.book-info img{
+  display: block;
+  width: 185px;
+  height: auto;
+  margin: 0 auto;
+}
+.book-info h3{
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5%;
+  text-align: center;
+  color: var(--gray00-color);
+  margin: 40px 0 12px;
+}
+.book-info p.book-name{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -2%;
+  text-align: center;
+}
+/*progress-bar*/
+.progress-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 52px 0 16px;
+}
+.progress-bar .current-time{
+  color: var(--gray00-color);
+}
+.progress-bar input{
+  flex: 0 1 252px;
+  height: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--primary-color) 0%, var(--gray02-color) 0%);
+}
+.progress-bar input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+}
+.progress-bar .total-time{
+  color: var(--gray00-color);
+}
+.spped{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.25;
+  line-height: 30px;
+}
+/*play btns*/
+.state-btn{
+  text-align: center;
+  margin-top: 56px;
+}
+.state-btn span{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.state-btn span:not(:last-child){
+  margin-right: 22px;
+}
+.state-btn span:last-child{
+  transform: scaleX(-1);
+}
+.state-btn span img{
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+/*tottle btn*/
+.toggle-btn{
+  width: 100%;
+  height: 54px;
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+}
+.toggle-btn .inner{
+  width: 108px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 3px;
+}
+.toggle-btn .inner a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+.toggle-btn .inner a img{
+  display: block;
+  width: 18px;
+  height: auto;
+  margin: 0 auto;
+}
+.toggle-btn .inner a.listen-btn{
+  background-color: var(--primary-color);
+}
+/*setting popup*/
+.popup-back{
+  width: 100%;
+  height: 100vh;
+  background-color: #00000047;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.setting-popup{
+  width: 100%;
+  height: 450px;
+  position: fixed;
+  left: 0;
+  bottom: -100vh;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: 32px 16px;
+  transition: bottom 0.3s ease-in-out;
+}
+.setting-popup.up{
+  bottom: 0 !important;
+}
+.setting-popup .popup-inner .title{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.setting-popup .popup-inner .speed .speed-options{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.setting-popup .popup-inner .speed .speed-options label{
+  flex: 1;
+  height: 32px;
+  display: block;
+  text-align: center;
+  background-color: var(--gray03-color);
+  border-radius: 6px;
+  line-height: 32px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: var(--txt-color);
+  cursor: pointer;
+}
+.setting-popup .popup-inner .speed .speed-options input{
+  display: none;
+}
+.setting-popup .popup-inner .speed .speed-options input[id=speed1]:checked + label[for=speed1],
+.setting-popup .popup-inner .speed .speed-options input[id=speed2]:checked + label[for=speed2],
+.setting-popup .popup-inner .speed .speed-options input[id=speed3]:checked + label[for=speed3],
+.setting-popup .popup-inner .speed .speed-options input[id=speed4]:checked + label[for=speed4]{
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.setting-popup .popup-inner .narrator{
+  margin: 36px 0 40px;
+}
+.setting-popup .popup-inner .narrator .sub-title{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+.setting-popup .popup-inner .narrator .narrator-option{
+  margin: 16px 0;
+}
+.setting-popup .popup-inner .narrator .narrator-option label{
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.setting-popup .popup-inner .narrator .narrator-option label span{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.setting-popup .popup-inner .narrator .narrator-option label .dot{
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--gray00-color);
+}
+.setting-popup .popup-inner .narrator .narrator-option label .last-dot{
+  display: none;
+}
+.setting-popup .popup-inner .narrator .narrator-option label .gender{
+  color: var(--gray00-color);
+}
+.setting-popup .popup-inner .narrator .narrator-option label .featured{
+  color: var(--gray00-color);
+  display: none;
+}
+.setting-popup .popup-inner .narrator .narrator-option label[for=narrator1]{
+  margin-bottom: 8px;
+}
+.setting-popup .popup-inner .narrator .narrator-option input{
+  display: none;
+}
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator1]:checked + label[for=narrator1],
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator2]:checked + label[for=narrator2]{
+  background: url("../../img/icon/li-back.png") no-repeat center / 100%;
+}
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator1]:checked + label[for=narrator1] span.featured,
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator2]:checked + label[for=narrator2] span.featured{
+  display: block;
+}
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator1]:checked + label[for=narrator1] span.last-dot,
+.setting-popup .popup-inner .narrator .narrator-option input[id=narrator2]:checked + label[for=narrator2] span.last-dot{
+  display: block;
+}
+.setting-popup .popup-inner button{
+  display: block;
+  width: 100%;
+  height: 54px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
