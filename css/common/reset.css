@@ -32,3 +32,11 @@ h2{
   font-weight: bold;
   letter-spacing: 0.4px;
 }
+/* ir */
+.ir_pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
