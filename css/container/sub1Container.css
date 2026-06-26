@@ -31,7 +31,7 @@ header .inner h1 a span{
 }
 #popup .title{
   font-size: 20px;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
   font-weight: 700;
 }
 /*container*/
@@ -65,7 +65,7 @@ header .inner h1 a span{
   height: 20px;
   font-size: 14px;
   font-weight: 400;
-  list-style: 20px;
+  line-height: 20px;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -144,7 +144,7 @@ body.pop-up{
 #popup .popup-inner .info-box .book-info h2{
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 4%;
+  letter-spacing: 0.4px;
   color: var(--gray01-color);
   text-align: center;
   margin-top: 24px;
@@ -152,14 +152,14 @@ body.pop-up{
 #popup .popup-inner .info-box .book-info p.book-name{
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
   text-align: center;
   margin: 6px 0;
 }
 #popup .popup-inner .info-box .book-info p.writer{
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -190,7 +190,7 @@ body.pop-up{
 #popup .popup-inner .info-box .book-info ul.info li span.txt{
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
 }
 #popup .popup-inner .info-box .btn-box{
   position: absolute;
@@ -258,7 +258,7 @@ body.pop-up{
   display: block;
   padding: 0 12px;
   font-size: 20px;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
   color: var(--primary-color);
 }
 #popup .popup-inner .keypoints-box ul li a .txt-box{
@@ -350,7 +350,7 @@ body.pop-up{
 }
 #popup .popup-inner .category .category-card span.txt{
   font-size: 16px;
-  letter-spacing: -0.25;
+  letter-spacing: -0.25px;
 }
 #popup .popup-inner .button-box{
   display: flex;
@@ -376,7 +376,7 @@ body.pop-up{
 #popup .popup-inner .button-box a.read-btn span.txt{
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -4%;
+  letter-spacing: -0.4px;
 }
 #popup .popup-inner .button-box a.listen-btn{
   flex: 0 1 calc(100% - 108px - 8px);
@@ -398,5 +398,5 @@ body.pop-up{
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -4%;
+  letter-spacing: -0.4px;
 }

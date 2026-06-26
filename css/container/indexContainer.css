@@ -77,19 +77,18 @@ header .inner h1 a img{
 .sec1 .growth-box .week-growth .title{
   font-size: 12px;
   text-align: center;
-  letter-spacing: 5%;
+  letter-spacing: 0.4px;
 }
 .sec1 .growth-box .week-growth .num{
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: -0.25;
 }
 .sec1 .growth-box .week-growth .txt{
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -0.25;
+  letter-spacing: -0.6px;
   color: var(--gray00-color);
 }
 .sec1 .growth-box .week-growth .streak{
@@ -146,7 +145,7 @@ header .inner h1 a img{
 }
 .sec1 .growth-box .daily-growth a span.txt{
   font-size: 10px;
-  letter-spacing: 5%;
+  letter-spacing: 0.5px;
   color: #fff;
 }
 .sec1 .growth-box .daily-growth a img.arrow-btn{

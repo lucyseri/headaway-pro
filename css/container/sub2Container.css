@@ -48,7 +48,7 @@
 .book-info h2{
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 5%;
+  letter-spacing: 0.5px;
   text-align: center;
   color: var(--gray00-color);
   margin: 40px 0 12px;
@@ -56,7 +56,7 @@
 .book-info p.book-name{
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -2%;
+  letter-spacing: -0.2px;
   text-align: center;
 }
 /*progress-bar*/
@@ -96,7 +96,7 @@
   text-align: center;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: -0.25;
+  letter-spacing: -0.25px;
   line-height: 30px;
 }
 /*play btns*/
